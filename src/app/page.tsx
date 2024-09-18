@@ -4,6 +4,9 @@ import Hero from "@/app/components/Hero";
 import Footer from "@/app/components/Footer";
 import SignUp from "@/app/components/SignUp";
 
+
+export const runtime = "edge";
+
 export default function Home() {
   return (
 
