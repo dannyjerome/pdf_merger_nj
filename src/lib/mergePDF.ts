@@ -4,7 +4,7 @@ const mergePDFs = async (files: File[]) => {
   const mergedPdf = await PDFDocument.create();
 console.log("files Received", files);
 
-  for (let file of files) {
+  for (const file of files) {
     const arrayBuffer = await file.arrayBuffer();
     const pdf = await PDFDocument.load(arrayBuffer);
 
